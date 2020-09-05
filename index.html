@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
@@ -12,22 +13,33 @@
       <h1>Feito com ❤️ por Nikolas Santos</h1>
 
       <div class="form-wrapper">
-        <form>
           <div class="input-block">
-            <label for="login-email">Email</label>
-            <input type="email" id="login-email" />
-          </div>
-          <div class="input-block">
-            <label for="login-password">Password</label>
-            <input type="password" id="login-password" />
-          </div>
-          <button type="submit" class="btn-login">Login</button>
-        </form>
+              <input placeholder="please type the Youtube video code" type="text" id="login-email" class="Input" />
+            </div>
+            <button onclick="Onchange()" type="submit" class="btn-login">
+              <span>
+                <img src="./procurar.svg">
+              </span>
+          </button>
       </div>
+      <main>
+        <iframe
+          width="60%"
+          height="500px" 
+          src="https://www.youtube.com/embed/wfF0zHeU3Zs"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </main>
     </section>
+  
 
     <ul class="squares"></ul>
 
     <script src="./script.js"></script>
+    <script>
+
+    </script>
   </body>
 </html>
